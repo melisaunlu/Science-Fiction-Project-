@@ -1,0 +1,59 @@
+Timeline 
+Setup environment and solved compability issues 
+Database setup and configure with PostgreSQL ,tables, sample data, 
+Backend API, initialized node.js, built 8 REST endpoints, connected backend to postgresql
+
+Things to do 
+  Add the Dijkstra's shortest path algorithm + /best-route endpoint 
+  Start routing (safest, cheapest (fuel calculation), fastest
+  React Frontend (interactive dashboard showing planets and routes), Route finder UI(select start + destination), Display best/safest/cheapest route results 
+  Galaxy map visualization: D3.js, Planets as nodes, routes as lines, animated ships 
+  Real-Time features: Socket.IO for live mission tracking, live ship position updates, mission status alerts 
+  Authentication: JWT login, three roles: Admin, pilot, viewer 
+  Deployment: Backend -> AWS, Frontend -> Vercel 
+
+Other goals: 
+  Database (more in depth) 
+    Add a Neo4j graph database for route/wormhole relationships 
+    Add workmholes as special route types 
+    Track fuel prices per planet (Dynamically) 
+    Add weather/hazard events stored in DB that affect routes inr eal time 
+    Add cargo system 
+
+  Pathfinding & Algorithms 
+    Upgrade from Dijkstra to A* for faster route finding 
+    Add multi-objective routing 
+    Add dynamic hazards 
+    Simulate fuel consumption 
+
+  Backend 
+    split into microservices 
+    Add a job queue for long-running mission simulations 
+    Add caching with Redis 
+    Rate limiting 
+    Logging with Winston 
+
+  Real Time 
+    Socket.IO for live ship position 
+    Mission event syustem 
+    Live leaderboard of most active pilots 
+  Frontend 
+    Three.js 3D animated galaxy instead of 2D d3.js 
+    Ship Camera (follow ship as it travels in real time) 
+    Analytics dashboard with Chart.js 
+    Misson Control View 
+  Authentication & Roles 
+    Admin - Full system control, can create planets/routes 
+    Pilot - can launch missions 
+    Viewer - reader only
+
+Deployment & Scale 
+  Dockerize the entire stack 
+  AWS EC2 for backend, RDS for PostgreSQl, ElastiCache for Redis 
+  CI/CD piepline with Github Actions 
+  Monitor with Grafana Dashboards 
+Also add some more cloud technologies: 
+  AWS S3 - store ship images or map assets 
+  AWS Lambda - run pathfinding as a serverless function 
+  AWS cloudwatch - native aws monitoring 
+  Terraform - infrastructure as code 
