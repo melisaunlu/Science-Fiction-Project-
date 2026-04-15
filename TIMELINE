@@ -57,3 +57,16 @@ Also add some more cloud technologies:
   AWS Lambda - run pathfinding as a serverless function 
   AWS cloudwatch - native aws monitoring 
   Terraform - infrastructure as code 
+Computer Graphics things to add: 
+  Physicall based rendering (planets with realistic textures, atmosphere glow, highlights) 
+  Procedurally generated planets (each planet looks unique based on its database 
+  Particle Systems (asteroid belts, nebula clouds, star fields)
+  Ship exhaaust trails using particle emitters 
+  Wormhole visual effect 
+  Bloom and glow post processing effects on stars 
+Shaders (GLSL) 
+  Custom vertex and fragment shaders for planet surfaces 
+  Atmospheric scattering shader 
+  Wormhole distortion shader 
+  Hyperspace jump affect 
+
